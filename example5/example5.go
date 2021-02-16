@@ -8,12 +8,12 @@ import (
 
   func myHandler(w http.ResponseWriter, r *http.Request, count int) {
 	//Print to the screen the number of times this handler has been called
-	fmt.Fprintf(w, "<h1>You've called myHandler %v times</h1>", count)
+	fmt.Fprintf(w, "<h1>You've visited the myHandler page %v times</h1>", count)
   }
 
   func mySecondHandler(w http.ResponseWriter, r *http.Request, count int) {
 	//Print to the screen the number of times this handler has been called
-	fmt.Fprintf(w, "<h1>You've called mySecondHandler %v times</h1>", count)
+	fmt.Fprintf(w, "<h1>You've visited the mySecondHandler page %v times</h1>", count)
   }
 
   func counter(myFunc func(http.ResponseWriter, *http.Request, int)) func(http.ResponseWriter, *http.Request) {

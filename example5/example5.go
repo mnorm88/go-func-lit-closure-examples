@@ -21,7 +21,7 @@ import (
 	var count int
 
 	return func(w http.ResponseWriter, r *http.Request) {
-	  //increment count 
+	  //Increment count 
 	  count++
 
 	  /*In addition to counting the number of times this func
